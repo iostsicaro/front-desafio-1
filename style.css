@@ -1,0 +1,401 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------- PÁGINA INICIAL(HOME) ------------- */
+
+/* ------------- ESTILIZAÇÃO DE CONTAINERS (CONTEUDOS) ------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: white;
+    height: 55px;
+}
+
+.container-conteudo {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 45px;
+}
+
+/* ------------- ESTILIZAÇÃO DA LOGO E MENU ------------- */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    margin-right: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu a{
+    padding-left: 50px;
+    text-decoration: none;
+    color: #545454;
+}
+
+/* ------------- ESTILIZAÇÃO DAS ÁREAS DE CONTEÚDO E DOS BOX QUE CONTÉM OS CONTEÚDOS ------------- */
+.box {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+}
+
+.primeiro-box, .segundo-box, .terceiro-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+/*    ESTILIZAÇÃO DOS TÍTULOS, PARAGRÁFOS E BOTÕES DOS BOX  */
+.primeiro-box h1 {
+    position: relative;
+    top: 10px;
+    left: 23px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.primeiro-box p {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.primeiro-box button {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 154px;
+    height: 43px;
+    border-color: #FE0078;
+    border-radius: 20px;
+    background-color: white;
+    color: #545454;
+    cursor: pointer;
+}
+
+.segundo-box h1 {
+    position: relative;
+    top: 10px;
+    left: 23px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.segundo-box p {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.segundo-box button {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 154px;
+    height: 43px;
+    border-color: #FE0078;
+    border-radius: 20px;
+    background-color: white;
+    color: #545454;
+    cursor: pointer;
+}
+
+.terceiro-box h1 {
+    position: relative;
+    top: 10px;
+    left: 23px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.terceiro-box p {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.terceiro-box button {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 154px;
+    height: 43px;
+    border-color: #FE0078;
+    border-radius: 20px;
+    background-color: white;
+    color: #545454;
+    cursor: pointer;
+}
+
+.primeiro-box button:hover {
+    background: #FE0078;
+    color: white;
+}
+
+.segundo-box button:hover {
+    background: #FE0078;
+    color: white;
+}
+
+.terceiro-box button:hover {
+    background: #FE0078;
+    color: white;
+}
+
+#data {
+    color: #929292;
+    font-size: 12px;
+}
+
+/* ------------- ESTILIZAÇÃO DA ÁREA DE CATEGORIAS E PUBLICIDADE AO LADO ESQUERDO DA PÁGINA ------------- */
+.box-categorias {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin-right: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 380px;
+    height: 50%;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.input input {
+    width: 340px;
+    height: 52px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.input input:hover {
+    cursor: pointer;
+    border: 1px solid #FE0078;
+}
+
+.input input::placeholder {
+    padding-left: 20px;
+}
+
+.categorias h2 {
+    border-left: 1px solid red;
+    margin: 12px 10px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.publi-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 240px;
+    margin: 30px auto;
+    background: #EEEEEE;
+}
+
+.publi-box p {
+    margin: 10px;
+    font-size: 36px;
+}
+
+.flex-categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-texto a{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted #EEEEEE;
+    margin: 10px auto;
+    width: 350px;
+    text-decoration: none;
+    color: #545454;
+}
+
+.flex-texto a:hover {
+    color: #FE0078;
+    border-bottom: 2px dotted #FE0078;
+}
+
+/* ------------- ESTILIZAÇÃO DO POST.HTML ------------- */
+.box-post {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    flex-direction: column;
+}
+
+.primeiro-box-post {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    height: 1152px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.primeiro-box-post h1 {
+    position: relative;
+    top: 10px;
+    left: 23px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.primeiro-box-post ul {
+    position: relative;
+    left: 60px;
+    font-size: 14px;
+}
+
+.primeiro-box-post p {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.box-comentarios {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.box-comentarios h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.box-comentarios label {
+    font-size: 14px;
+    color: #000000;
+}
+
+.box-comentarios input {
+    width: 354px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.nome-email {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.comentario input {
+    width: 730px;
+    height: 176px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#nome:focus {
+    outline: 1px solid #FE0078;
+    cursor: pointer;
+}
+
+#email:focus {
+    outline: 1px solid #FE0078;
+    cursor: pointer;
+}
+
+#comentarios:focus {
+    outline: 1px solid #FE0078;
+    cursor: pointer;
+}
+
+.botao {
+    display: flex;
+    margin-left: auto;
+}
+
+.botao button {
+    width: 118px;
+    height: 43px;
+    background: #FE0078;
+    border: 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.botao button:hover {
+    background-color: #545454;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------- ESTILIZAÇÃO DO FOOTER ------------- */
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    height: 55px;
+    margin-top: 40px;
+}
+
+.footer {
+    font-size: 14px;
+    color: #FFFFFF;
+}
